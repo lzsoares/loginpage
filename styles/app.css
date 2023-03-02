@@ -1,0 +1,273 @@
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.container-image {
+  background-image: url(../../image/sign_in.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 9em;
+}
+.container-header .navegacao {
+  display: flex;
+  align-items: center;
+}
+.container-header .navegacao img {
+  margin-right: 1.8em;
+}
+.container-header .navegacao .menu {
+  display: flex;
+}
+.container-header .navegacao .menu li {
+  display: inline;
+  margin: 1em;
+}
+.container-header .navegacao .menu li a {
+  text-decoration: none;
+  color: #1c1c1e;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.container-header .header-login {
+  display: flex;
+  gap: 0.4em;
+  align-items: center;
+}
+.container-header .header-login .primary-button {
+  text-decoration: none;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #0049FC;
+  padding: 0.75em 1em;
+  border-radius: 8px;
+}
+.container-header .header-login .secondary-button {
+  text-decoration: none;
+  color: #0049FC;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0.75em 1em;
+  border: 1px solid #0049FC;
+  border-radius: 8px;
+}
+
+.container-login {
+  display: flex;
+  justify-content: end;
+  margin: 5em 9em;
+}
+.container-login .card-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 35%;
+  border-radius: 24px;
+}
+.container-login .card-login h2 {
+  font-family: "Outfit", sans-serif;
+  color: #1c1c1e;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 1em 0;
+}
+.container-login .card-login .logins {
+  display: flex;
+  gap: 2em;
+  padding-bottom: 2em;
+}
+.container-login .card-login p {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.875;
+  padding: 0.85em;
+}
+.container-login .card-login .inputbox {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 1em;
+}
+.container-login .card-login .inputbox .input-login {
+  width: 100%;
+  padding: 1.2em 1em;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid rgba(28, 28, 30, 0.48);
+  transition: 250ms ease-in-out;
+}
+.container-login .card-login .inputbox .input-login::-moz-placeholder {
+  color: rgba(28, 28, 30, 0.48);
+  font-family: "Outfit", sans-serif;
+  -moz-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+.container-login .card-login .inputbox .input-login::placeholder {
+  color: rgba(28, 28, 30, 0.48);
+  font-family: "Outfit", sans-serif;
+  transition: 250ms ease-in-out;
+}
+.container-login .card-login .inputbox .input-login:hover {
+  border: 1px solid #1c1c1e;
+}
+.container-login .card-login .inputbox .input-login:hover::-moz-placeholder {
+  color: #1c1c1e;
+}
+.container-login .card-login .inputbox .input-login:hover::placeholder {
+  color: #1c1c1e;
+}
+.container-login .card-login .inputbox .input-login:focus {
+  border: 1px solid #1c1c1e;
+}
+.container-login .card-login .inputbox .input-login:focus::-moz-placeholder {
+  color: #1c1c1e;
+}
+.container-login .card-login .inputbox .input-login:focus::placeholder {
+  color: #1c1c1e;
+}
+.container-login .card-login .card-remember {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+.container-login .card-login .card-remember .remember {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+.container-login .card-login .card-remember .remember #checkremember {
+  height: 20px;
+  width: 20px;
+  background-color: rgba(28, 28, 30, 0.48);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+.container-login .card-login .card-remember .remember #checkremember::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 11px;
+  color: white;
+  display: none;
+}
+.container-login .card-login .card-remember .remember #checkremember:hover {
+  background-color: #0049FC;
+}
+.container-login .card-login .card-remember .remember #checkremember:checked {
+  background-color: #0049FC;
+}
+.container-login .card-login .card-remember .remember #checkremember:checked::after {
+  display: block;
+}
+.container-login .card-login .card-remember .remember .text-check {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  color: #1c1c1e;
+  cursor: pointer;
+}
+.container-login .card-login .card-remember .forget {
+  text-decoration: none;
+  color: #0049FC;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.container-login .card-login .button {
+  width: 80%;
+}
+.container-login .card-login .button-login {
+  width: 100%;
+  padding: 0.5em;
+  background-color: #0049FC;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid #0049FC;
+  cursor: pointer;
+}
+.container-login .card-login .signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 2em 0;
+}
+.container-login .card-login .signup-text {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+}
+.container-login .card-login .signup-link {
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0049FC;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}/*# sourceMappingURL=app.css.map */
